@@ -1,0 +1,17 @@
+@import '/src/block/mixins.scss';
+.plan-item__info_container {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-left: auto;
+    width: 60%;
+    height: 10vw;
+    @include flex-column();
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .plan-item__info_container{
+      height: 118px;
+      margin: 0;
+    }
+  }

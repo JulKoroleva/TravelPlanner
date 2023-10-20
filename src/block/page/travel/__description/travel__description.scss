@@ -1,0 +1,29 @@
+
+.travel__description {
+    font-size: 1.2vw;
+    font-weight: 200;
+    margin-bottom: 10vh;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    resize: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    width: 40vw;
+    cursor: pointer;
+  }
+
+
+  
+@media screen and (min-width:320px) and (max-width:850px) {
+  .travel__description {
+    width: 80vw;
+    font-size: 20px;
+  }
+}

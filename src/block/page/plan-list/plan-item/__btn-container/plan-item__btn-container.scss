@@ -1,0 +1,17 @@
+@import './item_btn/item_btn.scss';
+.plan-item__btn-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+    right: -30px;
+    top: 10px;
+  }
+  
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .plan-item__btn-container{
+      height: 30%;
+      right: -20px;
+    }
+  }

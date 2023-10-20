@@ -1,0 +1,54 @@
+@import "/src/block/mixins.scss";
+@import "./__mesage/empty-list__mesage.scss";
+@import "./is-mobile/travel-list-is-mobile.scss";
+
+.list-flex {
+  @include flex-column();
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.travel-list-flex {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 29vw;
+  height: 100vh;
+  z-index: 200;
+  background-color: $second-background-color;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.travel-list-grid {
+  @include flex-column();
+  justify-content: center;
+  width: 88vw;
+
+  padding: 2vw;
+}
+
+
+@media screen and (min-width:320px) and (max-width:850px) {
+  .travel-list-flex{
+    width: 100vw;
+    padding: 40px 0 0;
+  }
+
+  .list-grid{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  }
+}

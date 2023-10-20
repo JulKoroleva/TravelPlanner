@@ -1,0 +1,9 @@
+@import '/src/block/mixins.scss';
+.main-page__btn {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    @include background-image();
+  }

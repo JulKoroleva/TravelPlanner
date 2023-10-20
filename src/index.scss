@@ -1,0 +1,40 @@
+@import "./block/mixins.scss";
+@import "./block/buttons/buttons.scss";
+@import "./block/form/form.scss";
+@import "./block/input/input.scss";
+@import "./block/modal/modal.scss";
+@import "./block/page/page.scss";
+@import "./block/place-list/place-list.scss";
+@import "./block/slider/slider.scss";
+@media only screen and (max-width: 600px) {
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.error {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding-left: 5vw;
+  resize: none;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 400px;
+  padding: 0;
+  border-bottom: 1px solid red;
+  color: red;
+}

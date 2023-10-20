@@ -1,0 +1,16 @@
+.plan-item__img_container {
+    background-color: $background-color;
+    width: 36%;
+    height: 10vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .plan-item__img_container{
+      height: 118px;
+    margin: 0;
+    }
+  }

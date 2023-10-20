@@ -1,0 +1,39 @@
+
+.scroll-down__btn{
+  width: 4vw;
+  height: 3vw;
+}
+
+.scroll-down {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: -20px;
+    background: rgb(224, 223, 223);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(224, 223, 223, 1) 0%,
+      rgba(224, 223, 223, 0) 85%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(224, 223, 223, 1) 0%,
+      rgba(224, 223, 223, 0) 85%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(224, 223, 223, 1) 0%,
+      rgba(224, 223, 223, 0) 85%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$background-color,endColorstr=$background-color,GradientType=1);
+    filter: blur(5px);
+    z-index: -200;
+  }
+  
+
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .scroll-down__btn {
+      width: 11vw;
+    height: 8vw;
+    }
+  }

@@ -1,0 +1,8 @@
+@import '/src/block/mixins.scss';
+
+.empty-list__mesage {
+    position: absolute;
+    top: 45%;
+    @include flex-center;
+  }
+  

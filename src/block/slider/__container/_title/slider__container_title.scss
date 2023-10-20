@@ -1,0 +1,23 @@
+.slider__container_title {
+  width: 25%;
+  font-size: 2.5vw;
+  text-align: end;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 320px) and (max-width: 570px) {
+  .slider__container_title {
+    top: 30%;
+    font-size: 12px;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 850px) {
+  .slider__container_title {
+    font-size: 20px;
+    top: 35%;
+  }
+}

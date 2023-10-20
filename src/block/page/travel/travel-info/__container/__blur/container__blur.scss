@@ -1,0 +1,49 @@
+
+.container__blur {
+    display: flex;
+    width: 70vw;
+    height: 220px;
+    -webkit-box-shadow: 0px 15px 44px -2px rgba(145, 145, 145, 1);
+    -moz-box-shadow: 0px 15px 44px -2px rgba(145, 145, 145, 1);
+    box-shadow: 0px 15px 44px -2px rgba(145, 145, 145, 1);
+    z-index: 3;
+    background-color: #a4aeb7;
+  }
+  
+  .container__blur-up {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+  
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 3;
+    transform: translateY(80vh);
+  
+    transition: 1s ease-in-out;
+    background-color: $background-color;
+  }
+  
+  .container__blur-down {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 3;
+    transform: translateY(0.5vh);
+    transition: 1s ease-in-out;
+    background-color: #d7d7d7;
+  }
+
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .container__blur{
+      width: 100%;
+      height: 150px;
+    }
+  }
+  

@@ -1,0 +1,7 @@
+@import '../../mixins.scss';
+.field__container {
+    @include flex-center;
+    width: 100%;
+    text-align: center;
+  }
+  

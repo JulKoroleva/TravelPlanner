@@ -1,0 +1,24 @@
+@import '/src/block/mixins.scss';
+@import "./buttons/close-menu__btn/close-menu__btn.scss";
+@import "./buttons/main-page__btn/main-page__btn.scss";
+@import "./buttons/open__btn/open__btn.scss";
+.travel-list-is-mobile {
+  transform: translateX(-100%);
+  @include fixed;
+  top: 0;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background-color: $second-background-color;
+  overflow-y: scroll;
+  transition: transform 1s ease-in-out;
+}
+
+.travel-list-is-mobile.active {
+  transform: translateX(0);
+  position: fixed;
+}
+
+

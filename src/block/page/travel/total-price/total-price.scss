@@ -1,0 +1,22 @@
+.total-price {
+  display: flex;
+  width: 40vw;
+  height: 50px;
+  border-top: 5px solid rgb(246, 0, 0);
+  font-size: 20px;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 850px) {
+  .total-price {
+    width: 100%;
+    padding-right: 40px;
+    
+
+    h1 {
+      margin-right: 40px;
+    }
+  }
+}

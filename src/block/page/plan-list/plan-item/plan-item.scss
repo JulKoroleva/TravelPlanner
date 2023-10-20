@@ -1,0 +1,30 @@
+@import './__btn-container/plan-item__btn-container.scss';
+@import './__budget/plan-item__budget.scss';
+@import './__date/plan-item__date.scss';
+@import './__description/plan-item__description.scss';
+@import './__img/plan-item__img.scss';
+@import './__info/plan-item__info.scss';
+@import './__isfavorite/plan-item__isfavorite.scss';
+@import './__name/plan-item__name.scss';
+
+
+.plan-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    margin-bottom: 40px;
+  }
+  
+  .plan-item:first-of-type {
+    margin-top: 30px;
+  }
+  
+
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .plan-item{
+      width:85vw;
+    }
+  }

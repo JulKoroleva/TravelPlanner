@@ -1,0 +1,11 @@
+@import '../../mixins.scss';
+.delete__btn {
+    position: absolute;
+    right: 30PX;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    @include background-image();
+    z-index: 33;
+  }
+  

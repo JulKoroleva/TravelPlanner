@@ -1,0 +1,8 @@
+@import "./travel-list/travel-list.scss";
+@import "./travel/travel.scss";
+@import './plan-list/plan-list.scss';
+@import './section/section.scss';
+.page {
+  display: flex;
+  justify-content: center;
+}

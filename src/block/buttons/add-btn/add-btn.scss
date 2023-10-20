@@ -1,0 +1,102 @@
+@import "../../mixins.scss";
+@import "./_img/add-btn__travel_img.scss";
+.add-btn__travel_grid {
+  width: 23vw;
+  height: 20vh;
+  padding: 20px;
+  margin: 20px;
+  @include border;
+  border-radius: 5px;
+  background: rgb(226, 226, 226);
+  background: -moz-linear-gradient(
+    circle,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(237, 237, 237, 1) 54%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    circle,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(237, 237, 237, 1) 54%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background: linear-gradient(
+    circle,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(237, 237, 237, 1) 54%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e2e2e2",endColorstr="#e2e2e2",GradientType=1);
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.2)
+}
+
+.add-btn__travel_grid:hover,
+.add-btn__plan:hover,
+.add-btn__travel_flex:hover {
+  background: rgb(213, 213, 213);
+}
+
+.add-btn__travel_flex {
+  width: 83%;
+  height: 50px;
+  @include border;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+
+.add-btn__plan {
+  margin: 10px auto 30px;
+  width: 60px;
+  height: 60px;
+  @include border;
+  border-radius: 5px;
+}
+
+.add-plan__btn {
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  margin-left: auto;
+  width: 100px;
+  height: 60px;
+  @include border;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.add-travel__btn {
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  @include flex-center;
+  width: 30%;
+  height: 60px;
+  @include border;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.add-travel__btn:hover,
+.add-plan__btn:hover {
+  background-color: #c2cad5;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:850px) {
+  .add-btn__travel_grid{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .add-btn__travel_flex{
+    height: 50px;
+    padding: 10px;
+  }
+
+  .add-btn__plan{
+    margin: 0 auto 10px;
+  }
+}

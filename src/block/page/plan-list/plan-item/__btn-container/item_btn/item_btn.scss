@@ -1,0 +1,15 @@
+@import '../../../../../mixins.scss';
+
+.item_btn {
+    width: 20px;
+    height: 20px;
+    @include background-image();
+  }
+  
+
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .item_btn{
+      width: 15px;
+      height: 15px;
+    }
+  }

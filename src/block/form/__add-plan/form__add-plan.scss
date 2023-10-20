@@ -1,0 +1,18 @@
+@import '../../mixins.scss';
+@import './_label/form__add-plan_label.scss';
+.form__add-plan {
+    height: 450px;
+    padding: 50px 30px 70px;
+    @include flex-column();
+    border-bottom: 1px solid rgba(95, 94, 94, 0.321);
+    width: 100%;
+    background-color: #f0f0f0;
+    z-index: 2;
+  }
+  
+
+  @media screen and (min-width:320px) and (max-width:850px) {
+    .form__add-plan{
+      align-items: center;
+    }
+  }

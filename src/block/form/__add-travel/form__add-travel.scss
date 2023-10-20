@@ -1,0 +1,11 @@
+@import '../../mixins.scss';
+@import './_label/form__add-travel_label.scss';
+.form__add-travel {
+    @include flex-column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  
+    z-index: 120;
+  }
+  

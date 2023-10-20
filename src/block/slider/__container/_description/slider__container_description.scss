@@ -1,0 +1,21 @@
+.slider__container_description{
+    font-size: 16px;
+    text-align: end;
+    color: rgba(0, 0, 0, 0.44);
+    border-top: 3px solid black;
+}
+
+@media screen and (min-width:320px) and (max-width:450px) {
+    .slider__container_description{
+        font-size: 10px;
+        bottom: 15%;
+    }
+    
+  }
+
+  @media screen and (min-width:450px) and (max-width:850px) {
+    .slider__container_description{
+        font-size: 12px;
+    }
+    
+  }
