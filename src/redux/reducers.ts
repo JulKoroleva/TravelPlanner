@@ -152,10 +152,13 @@ const rootReducer: Reducer<AppState, Action> = (
       return newStateDelete;
 
     case ActionTypes.SELECT_TRAVEL:
-      return {
+       const newStateSelect = {
         ...state,
         selectedTravel: action.payload,
       };
+      localStorage.removeItem('selectedTravel');
+      localStorage.setItem('selectedTravel', JSON.stringify(action.payload));
+      return newStateSelect
 
     case ActionTypes.DESELECT_TRAVEL:
       return {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef} from "react";
 import { useSelector, useDispatch } from "react-redux";
+import {useNavigate} from 'react-router-dom'
 import TripPlanItem from "./TripPlanItem";
 import AddPlanItemForm from "./AddPlanItemForm";
 import TravelList from "./TravelList";
@@ -20,6 +21,7 @@ const TravelPage: React.FC<TravelPageProps> = ({ travel }) => {
   const travels = useSelector((state: any) => state.travels);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const [currentTravelData, setCurrentTravelData] = useState(travel);
   const [savedTravelData, setSavedTravelData] = useState(JSON.parse(localStorage.getItem("selectedTravel") || "{}"));
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -42,14 +44,21 @@ const TravelPage: React.FC<TravelPageProps> = ({ travel }) => {
   const [plan, setPlan] = useState(travel.plan);
 
   useEffect(() => {
-    if (travel) {
-      setCurrentTravelData(travel);
-      setEditState({
-        name: { editing: false, value: travel.name },
-        description: { editing: false, value: travel.description },
-        budget: { editing: false, value: travel.budget },
-      });
+    try {
+
+      if (travel) {
+        setCurrentTravelData(travel);
+        setEditState({
+          name: { editing: false, value: travel.name },
+          description: { editing: false, value: travel.description },
+          budget: { editing: false, value: travel.budget },
+        });
     }
+    } catch (e) {
+      console.log('error:', e)
+      navigate('/')
+    }
+
   }, [travel]);
 
   useEffect(() => {

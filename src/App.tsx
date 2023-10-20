@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -11,7 +11,7 @@ const App: React.FC = () => {
   const selectedTravel = useSelector((state: any) => state.selectedTravel);
   const isGrid: boolean = true;
   const dispatch = useDispatch();
-
+  const [savedTravelData, setSavedTravelData] = useState(JSON.parse(localStorage.getItem("selectedTravel") || "{}"));
   useEffect(() => {
     const handleResize = () => {
       const isMobile = window.innerWidth < 850;
@@ -34,7 +34,7 @@ const App: React.FC = () => {
         />
         <Route
           path="/travel"
-          element={<TravelPage travel={selectedTravel} />}
+          element={<TravelPage travel={selectedTravel || savedTravelData} />}
         />
       </Routes>
     </div>

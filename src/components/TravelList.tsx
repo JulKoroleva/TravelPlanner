@@ -1,6 +1,6 @@
 // src/components/TravelList.tsx
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import TravelItem from "./TravelItem";
 import AddTravelBtn from "./AddTravelBtn";
@@ -18,6 +18,7 @@ interface TravelListProps {
 
 const TravelList: React.FC<TravelListProps> = ({ travels, isGrid }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const isMobile = useSelector((state: any) => state.isMobile);
   const [hoveredTravel, setHoveredTravel] = useState(null);
 
@@ -103,6 +104,7 @@ const TravelList: React.FC<TravelListProps> = ({ travels, isGrid }) => {
                 <button
                   style={{ backgroundImage: `url(${mainPageBtn})` }}
                   className="main-page__btn"
+                  onClick={() => navigate('/')}
                 ></button>
               )}
               {isMobile && (

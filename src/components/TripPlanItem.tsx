@@ -101,7 +101,7 @@ const TripPlanItem: React.FC<TripPlanItemProps> = ({
             <p className="plan-item__description">{planItem.description}</p>
     
             {warningMessage && (
-              <p style={{ color: "red" }}>Не вписывается в бюджет</p>
+              <p className="warning-message" style={{ color: "red" }}>Не вписывается в бюджет</p>
             )}
           </div>
           )}

@@ -2,3 +2,15 @@
   margin-bottom: 0;
   font-size: 18px;
 }
+
+@media screen and (min-width:320px) and (max-width:450px) {
+  .plan-item__name {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:450px) and (max-width:850px) {
+  .plan-item__name {
+    font-size: 14px;
+  }
+}

@@ -4,3 +4,22 @@
 @import './total-price/total-price.scss';
 @import './travel-info/travel-info.scss';
 @import './travel-item/travel-item.scss';
+
+
+.empty_travel{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    width: 70vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 850px) {
+    .empty_travel {
+      width: 100vw;
+    }
+  }
+  
