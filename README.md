@@ -2,6 +2,10 @@
 
 Welcome to the Travel Planner repository! This web application allows users to seamlessly plan their journeys, offering a range of features to enhance the travel planning experience.
 
+<div align="center">
+<a href="http://46.72.127.251:2999/" target="_blank" style="text-decoration:none;" >VIEW THE RUNNING APP</a>
+</div>
+
 ## Features
 
 ### 1. Trip Management
